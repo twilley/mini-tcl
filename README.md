@@ -11,7 +11,11 @@ whole of the tcllib.  The [pure-tcl readline](http://wiki.tcl.tk/20215) is
 enabled by default for the root user in the container so you will have a decent
 prompt at the command line.
 
-The busybox (3.3 through 3.6) or the busybox-extras (3.7+) package is also installed.
+The following packages are installed:
+* busybox-extras (3.7+) or busybox (Alpine 3.3 through 3.6)
+* openssh-client
+* netcat-openbsd
+* socat
 
 ## Building and Running
 

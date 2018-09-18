@@ -2,6 +2,9 @@ FROM alpine:3.6
 MAINTAINER Emmanuel Frecon <efrecon@gmail.com>
 
 RUN apk --no-cache add busybox
+RUN apk --no-cache add openssh-client
+RUN apk --no-cache add netcat-openbsd
+RUN apk --no-cache add socat
 
 # Now copy all nice scripts from our subdirectory to the root
 COPY scripts/ /scripts/
