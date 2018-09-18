@@ -40,9 +40,13 @@ This image tries to follow the release cycle of the
 [official](https://hub.docker.com/_/alpine/) Alpine linux image from docker.
 Available are the following tags:
 
-* [3.3](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.3)
-* [3.4](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.4), [latest](https://github.com/twilley/mini-tcl/blob/master/Dockerfile)
 * [edge](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-edge)
+* [latest](https://github.com/twilley/mini-tcl/blob/master/Dockerfile)
+* [3.7](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.7)
+* [3.6](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.6)
+* [3.5](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.5)
+* [3.4](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.4)
+* [3.3](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.3)
 
 ## Credits
 
