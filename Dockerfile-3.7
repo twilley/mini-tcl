@@ -1,6 +1,8 @@
 FROM alpine:3.7
 MAINTAINER Emmanuel Frecon <efrecon@gmail.com>
 
+RUN apk --no-cache add busybox-extras
+
 # Now copy all nice scripts from our subdirectory to the root
 COPY scripts/ /scripts/
 

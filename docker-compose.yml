@@ -1,5 +1,5 @@
 tclsh-service:
-  image: efrecon/mini-tcl
+  image: twilley/mini-tcl-busybox
   entrypoint: /bin/sh
   command: -c "echo 'puts stderr helloworld' | tclsh8.6"
   volumes:

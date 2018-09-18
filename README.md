@@ -1,4 +1,6 @@
-# mini-tcl [![Build Status](https://travis-ci.org/efrecon/mini-tcl.svg?branch=master)](https://travis-ci.org/efrecon/mini-tcl) [![](https://images.microbadger.com/badges/image/efrecon/mini-tcl.svg)](http://microbadger.com/images/efrecon/mini-tcl)
+
+
+# mini-tcl [![Build Status](https://travis-ci.org/twilley/mini-tcl.svg?branch=master)](https://travis-ci.org/twilley/mini-tcl) [![](https://images.microbadger.com/badges/image/twilley/mini-tcl.svg)](http://microbadger.com/images/twilley/mini-tcl)
 An Alpine Linux based mini Tcl for Docker.
 
 This contains a restricted set of packages necessary for running Tcl 8.6
@@ -9,15 +11,17 @@ whole of the tcllib.  The [pure-tcl readline](http://wiki.tcl.tk/20215) is
 enabled by default for the root user in the container so you will have a decent
 prompt at the command line.
 
+The busybox (3.3 through 3.6) or the busybox-extras (3.7+) package is also installed.
+
 ## Building and Running
 
 To build, simply write:
 
-    docker build -t efrecon/mini-tcl .
+    docker build -t twilley/mini-tcl .
 
 To run and get an interactive Tcl prompt:
 
-    docker run -it --rm efrecon/mini-tcl
+    docker run -it --rm twilley/mini-tcl
 
 ## Running your own scripts
 
@@ -36,11 +40,13 @@ This image tries to follow the release cycle of the
 [official](https://hub.docker.com/_/alpine/) Alpine linux image from docker.
 Available are the following tags:
 
-* [3.3](https://github.com/efrecon/mini-tcl/blob/master/Dockerfile-3.3)
-* [3.4](https://github.com/efrecon/mini-tcl/blob/master/Dockerfile-3.4), [latest](https://github.com/efrecon/mini-tcl/blob/master/Dockerfile)
-* [edge](https://github.com/efrecon/mini-tcl/blob/master/Dockerfile-edge)
+* [3.3](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.3)
+* [3.4](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-3.4), [latest](https://github.com/twilley/mini-tcl/blob/master/Dockerfile)
+* [edge](https://github.com/twilley/mini-tcl/blob/master/Dockerfile-edge)
 
 ## Credits
+
+Forked from https://github.com/efrecon/mini-tcl/
 
 Thanks to the maintainer of the [Tcl package on
 Alpine](http://pkgs.alpinelinux.org/package/main/x86_64/tcl) to have spent the
